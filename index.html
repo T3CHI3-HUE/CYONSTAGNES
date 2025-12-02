@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CYON St. Agnes</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CYON St. Agnes</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#executives">Executives</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero animate-bounce">
+        <h1 class="animate-bounce">Welcome to CYON St. Agnes</h1>
+        <p class="animate-bounce">Building a community of faith, love, and service.</p>
+    </section>
+
+    <!-- New Section with Slideshow and Scrolling Text -->
+    <section id="interactive-section" class="interactive-section animate-bounce">
+        <div class="slideshow-container">
+            <img src="images/IMG_3950.PNG" alt="Slide 1" class="slide">
+            <img src="images/IMG_3951.PNG" alt="Slide 2" class="slide">
+            <img src="images/IMG_3952.JPG" alt="Slide 3" class="slide">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="scrolling-text-container animate-bounce">
+            <div class="scrolling-text">
+                <p>At a time like this</p>
+                <p>When we come together</p>
+                <p>From the East and West</p>
+                <p>From the North and south</p>
+                <p>When we come together,</p>
+                <p>In the name of Jesus Christ</p>
+                <p>Oh Lord! Arise and Shine</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="stats-section">
+        <h2 class="animate-bounce">Our Impact</h2>
+        <div class="stats-grid animate-bounce">
+            <div class="stat-card">
+                <div class="counter-number" data-target="500">0</div>
+                <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="counter-number" data-target="25">0</div>
+                <div class="stat-label">Years of Service</div>
+            </div>
+            <div class="stat-card">
+                <div class="counter-number" data-target="100">0</div>
+                <div class="stat-label">Events Organized</div>
+            </div>
+            <div class="stat-card">
+                <div class="counter-number" data-target="50">0</div>
+                <div class="stat-label">Communities Served</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder for Additional Sections -->
+    <section id="about" class="about">
+        <h2 class="animate-bounce">About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="animate-bounce">The Catholic Youth Organisation of Nigeria (CYON), St. Agnes Parish, Maryland, Ikeja, Lagos, is a dynamic community of young Catholics dedicated to faith, service, and personal growth.
+                    Guided by our motto "Let your light shine" and our slogan "For God and for youths through Christ," we aim to inspire and empower young people to live out their faith boldly and make a positive impact in the Church and society.
+                    Under the patronage of Saint Charles Lwanga, our members draw strength from his example of courage and devotion. Our logo—a heart with two hands reaching out to a dove carrying a leaf—symbolizes love, unity, and the peace of the Holy Spirit.
+                    CYON provides opportunities for spiritual, moral, educational, and social development through faith-based programs, leadership initiatives, and community service.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/IMG_3951.PNG" alt="CYON St. Agnes Community" class="about-img animate-bounce">
+            </div>
+        </div>
+        <div class="mission-highlight animate-bounce">
+            <h3>Our Mission</h3>
+            <p>To build a generation of God-fearing, self-reliant, and purpose-driven youths committed to spreading the light of Christ.</p>
+        </div>
+        <div class="objectives-section">
+            <h3 class="animate-bounce">Our Objectives</h3>
+            <div class="objectives-grid animate-bounce">
+                <div class="objective-item">
+                    <span class="objective-icon">🙏</span>
+                    <p>Deepen young people's relationship with God.</p>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">📣</span>
+                    <p>Promote evangelism and active Christian witness.</p>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">🤝</span>
+                    <p>Foster unity among Catholic and non-Catholic youths.</p>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">💪</span>
+                    <p>Encourage self-reliance and the use of talents for God's glory.</p>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">🏛️</span>
+                    <p>Support parish development and strengthen harmony within the Church community.</p>
+                </div>
+            </div>
+        </div>
+        <p class="closing-statement animate-bounce">Together, we strive to shine our light for Christ — in our parish, our communities, and beyond.</p>
+    </section>
+
+    <section id="executives" class="executives">
+        <h2 class="animate-bounce">Meet the Executives</h2>
+        <div class="executives-grid animate-bounce">
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>President</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive2.jpg" alt="Executive 2" class="executive-img">
+                <h3>Jane Smith</h3>
+                <p>Vice President</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive3.jpg" alt="Executive 3" class="executive-img">
+                <h3>Mike Johnson</h3>
+                <p>Secretary</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive4.jpg" alt="Executive 4" class="executive-img">
+                <h3>Sarah Wilson</h3>
+                <p>Asst.Secretary</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Financial Secretary</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Director of Socials</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Director of Socials 2</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Provost</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Provost 2</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Welfare</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Welfare 2</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>P.R.O </p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>P.R.O 2</p>
+            </div>
+            <div class="executive-card">
+                <img src="images/executive1.jpg" alt="Executive 1" class="executive-img">
+                <h3>John Doe</h3>
+                <p>Faith formator</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="animate-bounce">Gallery</h2>
+
+        <details class="event animate-bounce">
+            <summary>Youth Week</summary>
+            <details class="year">
+                <summary>2024</summary>
+                <div class="gallery-grid">
+                    <img src="images/YW 24/IMG_7228.JPG" alt="Retreat 2023 Image 1">
+                    <img src="images/YW 24/IMG_7229.JPG" alt="Retreat 2023 Image 2">
+                    <img src="images/YW 24/IMG_7230.JPG" alt="Retreat 2023 Image 3">
+                    <img src="images/YW 24/IMG_7231.JPG" alt="Retreat 2023 Image 4">
+                    <img src="images/YW 24/IMG_7232.JPG" alt="Retreat 2023 Image 5">
+                    <img src="images/YW 24/IMG_7233.JPG" alt="Retreat 2023 Image 6">
+                    <img src="images/YW 24/IMG_7234.JPG" alt="Retreat 2023 Image 7">
+                    <img src="images/YW 24/IMG_7235.JPG" alt="Retreat 2023 Image 8" style="display: none;">
+                    <img src="images/YW 24/IMG_7236.JPG" alt="Retreat 2023 Image 9">
+                    <img src="images/YW 24/IMG_7237.JPG" alt="Retreat 2023 Image 10">
+                    <img src="images/YW 24/IMG_7238.JPG" alt="Retreat 2023 Image 11">
+                    <img src="images/YW 24/IMG_7239.JPG" alt="Retreat 2023 Image 12">
+                    <img src="images/YW 24/IMG_7240.JPG" alt="Retreat 2023 Image 13">
+                    <img src="images/YW 24/IMG_7241.JPG" alt="Retreat 2023 Image 14">
+                    <img src="images/YW 24/IMG_7242.JPG" alt="Retreat 2023 Image 15">
+                    <img src="images/YW 24/IMG_7243.JPG" alt="Retreat 2023 Image 16">
+                    <img src="images/YW 24/IMG_7244.JPG" alt="Retreat 2023 Image 17">
+                    <img src="images/YW 24/IMG_7245.JPG" alt="Retreat 2023 Image 18">
+                    <img src="images/YW 24/IMG_7246.JPG" alt="Retreat 2023 Image 19">
+                    <img src="images/YW 24/IMG_7247.JPG" alt="Retreat 2023 Image 20">
+                    <img src="images/YW 24/IMG_7248.JPG" alt="Retreat 2023 Image 21">
+                    <img src="images/YW 24/IMG_7249.JPG" alt="Retreat 2023 Image 22">
+                    <img src="images/YW 24/IMG_7250.JPG" alt="Retreat 2023 Image 23">
+                    <img src="images/YW 24/IMG_7251.JPG" alt="Retreat 2023 Image 24">
+                    <img src="images/YW 24/IMG_7252.JPG" alt="Retreat 2023 Image 25">
+                    <img src="images/YW 24/IMG_7253.JPG" alt="Retreat 2023 Image 26">
+                    <img src="images/YW 24/IMG_7254.JPG" alt="Retreat 2023 Image 27">
+                    <img src="images/YW 24/IMG_7255.JPG" alt="Retreat 2023 Image 28">
+                    <img src="images/YW 24/IMG_7256.JPG" alt="Retreat 2023 Image 29">
+                    <img src="images/YW 24/IMG_7257.JPG" alt="Retreat 2023 Image 30">
+                    <img src="images/YW 24/IMG_7258.JPG" alt="Retreat 2023 Image 31">
+                    <img src="images/YW 24/IMG_7259.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7260.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7261.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7262.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7263.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7264.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7265.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7266.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7267.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7268.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7269.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7270.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7271.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7272.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7273.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 24/IMG_7274.JPG" alt="Retreat 2023 Image 32">
+                </div>
+                <button class="load-more-btn">Load More Images</button>
+            </details>
+            <details class="year">
+                <summary>2025</summary>
+                <div class="gallery-grid">
+                    <img src="images/YW 2025/IMG_7189.JPG" alt="Retreat 2024 Image 1">
+                    <img src="images/YW 2025/IMG_7190.JPG" alt="Retreat 2024 Image 2">
+                    <img src="images/YW 2025/IMG_7188.JPG" alt="Retreat 2023 Image 24">
+                    <img src="images/YW 2025/IMG_7191.JPG" alt="Retreat 2023 Image 25">
+                    <img src="images/YW 2025/IMG_7192.JPG" alt="Retreat 2023 Image 26">
+                    <img src="images/YW 2025/IMG_7193.JPG" alt="Retreat 2023 Image 27">
+                    <img src="images/YW 2025/IMG_7194.JPG" alt="Retreat 2023 Image 28">
+                    <img src="images/YW 2025/IMG_7195.JPG" alt="Retreat 2023 Image 29">
+                    <img src="images/YW 2025/IMG_7196.JPG" alt="Retreat 2023 Image 30">
+                    <img src="images/YW 2025/IMG_7197.JPG" alt="Retreat 2023 Image 31">
+                    <img src="images/YW 2025/IMG_7198.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7199.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7200.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7201.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7202.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7203.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7204.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7205.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7206.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7207.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7208.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7209.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7210.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7211.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7212.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7213.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7214.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7215.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7216.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7217.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7218.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7219.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7220.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7221.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7222.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7223.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7224.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7225.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7226.JPG" alt="Retreat 2023 Image 32">
+                    <img src="images/YW 2025/IMG_7227.JPG" alt="Retreat 2023 Image 32">
+                </div>
+                <button class="load-more-btn">Load More Images</button>
+            </details>
+        </details>
+
+        <details class="event animate-bounce">
+            <summary>Harvest</summary>
+            <details class="year">
+                <summary>2023</summary>
+                <div class="gallery-grid">
+                    <img src="images/images (1).jpg" alt="Christmas 2023 Image 1">
+                </div>
+            </details>
+        </details>
+
+        <details class="event animate-bounce">
+            <summary>Christmas Celebration</summary>
+            <details class="year">
+                <summary>2023</summary>
+                <div class="gallery-grid">
+                    <img src="images/images (1).jpg" alt="Christmas 2023 Image 1">
+                </div>
+            </details>
+        </details>
+
+    </section>
+
+    <section id="events" class="events">
+        <h2 class="animate-bounce">Our Events</h2>
+        <p class="animate-bounce">Join us for these upcoming events! Click "Add to Calendar" to get reminders.</p>
+
+        <div class="events-grid animate-bounce">
+            <div class="event-card">
+                <div class="event-flyer">
+                    <img src="images/flyer-youth-week.jpg" alt="Youth Week 2025 Flyer" class="flyer-img">
+                </div>
+                <h3>Youth Week 2025</h3>
+                <p class="event-date">📅 March 15-21, 2025</p>
+                <div class="countdown"></div>
+                <p class="event-description">A week of spiritual renewal, fellowship, and activities for our youth community.</p>
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Youth+Week+2025&dates=20250315T000000Z/20250321T235900Z&details=A+week+of+spiritual+renewal,+fellowship,+and+activities+for+our+youth+community.&location=CYON+St.+Agnes+Parish" target="_blank" class="calendar-btn">Add to Calendar</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-flyer">
+                    <img src="images/flyer-harvest.jpg" alt="Harvest Thanksgiving Flyer" class="flyer-img">
+                </div>
+                <h3>Harvest Thanksgiving</h3>
+                <p class="event-date">📅 October 5, 2025</p>
+                <div class="countdown"></div>
+                <p class="event-description">Celebrate the harvest season with thanksgiving, food sharing, and community fellowship.</p>
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Harvest+Thanksgiving&dates=20251005T100000Z/20251005T140000Z&details=Celebrate+the+harvest+season+with+thanksgiving,+food+sharing,+and+community+fellowship.&location=CYON+St.+Agnes+Parish" target="_blank" class="calendar-btn">Add to Calendar</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-flyer">
+                    <img src="images/flyer-christmas.jpg" alt="Christmas Celebration Flyer" class="flyer-img">
+                </div>
+                <h3>Christmas Celebration</h3>
+                <p class="event-date">📅 December 25, 2025</p>
+                <div class="countdown"></div>
+                <p class="event-description">Join us for Christmas mass, carol singing, and festive celebrations with the community.</p>
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Christmas+Celebration&dates=20251225T180000Z/20251225T220000Z&details=Join+us+for+Christmas+mass,+carol+singing,+and+festive+celebrations+with+the+community.&location=CYON+St.+Agnes+Parish" target="_blank" class="calendar-btn">Add to Calendar</a>
+            </div>
+
+            <div class="event-card">
+                <div class="event-flyer">
+                    <img src="images/flyer-prayer.jpg" alt="Monthly Prayer Meeting Flyer" class="flyer-img">
+                </div>
+                <h3>Monthly Prayer Meeting</h3>
+                <p class="event-date">📅 Every 1st Saturday of the month</p>
+                <div class="countdown"></div>
+                <p class="event-description">Monthly prayer sessions for spiritual growth and community building.</p>
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&text=Monthly+Prayer+Meeting&dates=20250104T150000Z/20250104T170000Z&details=Monthly+prayer+sessions+for+spiritual+growth+and+community+building.&location=CYON+St.+Agnes+Parish&recur=RRULE:FREQ=MONTHLY;BYMONTHDAY=1" target="_blank" class="calendar-btn">Add to Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="animate-bounce">Contact Us</h2>
+        <p class="animate-bounce">Get in touch with us or join CYON St. Agnes.</p>
+        <form class="contact-form animate-bounce" action="https://formspree.io/f/mrbrzwwg" method="POST">
+            <div class="form-group">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number: <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Date of Birth: <span class="required">*</span></label>
+                <div class="dob-selects">
+                    <select id="dob-day" name="dob-day" required>
+                        <option value="">Day</option>
+                    </select>
+                    <select id="dob-month" name="dob-month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="dob-year" name="dob-year" required>
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reason">Why do you want to join CYON?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CYON St. Agnes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
